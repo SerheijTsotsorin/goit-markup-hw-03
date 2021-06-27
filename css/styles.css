@@ -88,7 +88,7 @@ body {
   color: black;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1.94;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
 
@@ -102,7 +102,7 @@ body {
   color: var(--accent-color);
   font-weight: bold;
   font-size: 26px;
-  line-height: 1.94;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -112,6 +112,7 @@ body {
 }
 
 .menu-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -143,8 +144,12 @@ body {
   padding-bottom: 32px;
 }
 
-.mail-link {
+.contacts-list {
+  display: flex;
   margin-left: auto;
+}
+
+.contacts-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -162,11 +167,9 @@ body {
 }
 
 .hero-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 600px;
-  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -184,6 +187,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  text-align: center;
   letter-spacing: 0.06em;
   color: var(--dark-theme-text-color);
   background-color: var(--accent-color);
@@ -203,6 +207,10 @@ body {
 }
 
 /*------ADVANTAGES---------*/
+.advantages-container {
+  padding-top: 126px;
+  margin-bottom: 132px;
+}
 
 .advantages-list {
   display: flex;
@@ -272,6 +280,11 @@ body {
 }
 
 .team-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 120px) / 4);
@@ -299,8 +312,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -311,6 +322,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*-----footer----*/
@@ -325,14 +341,16 @@ body {
   font-style: normal;
 }
 
+.main-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .main-contacts-address {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--dark-theme-text-color);
-
-  margin-bottom: 9px;
 }
 
 .main-contacts-mail,
@@ -342,15 +360,13 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-
-  margin-bottom: 9px;
 }
 
 .logo-footer {
   display: block;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1.94;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--dark-theme-text-color);
@@ -427,9 +443,7 @@ body {
 }
 
 .link-box {
-  padding-left: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
   border: 1px solid var(--portfolio-card-border-color);
   border-top: none;
 }
