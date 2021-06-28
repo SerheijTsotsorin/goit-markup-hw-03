@@ -134,6 +134,7 @@ body {
 
 .mail-link,
 .tel-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -164,9 +165,6 @@ body {
 
 .hero {
   background: var(--background-accent-color);
-}
-
-.hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -207,10 +205,6 @@ body {
 }
 
 /*------ADVANTAGES---------*/
-.advantages-container {
-  padding-top: 126px;
-  margin-bottom: 132px;
-}
 
 .advantages-list {
   display: flex;
